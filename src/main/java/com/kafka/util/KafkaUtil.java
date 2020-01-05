@@ -6,4 +6,8 @@ import java.util.concurrent.ExecutionException;
 public interface KafkaUtil {
 
 	public Set<String> getTopics() throws InterruptedException, ExecutionException;
+
+	public boolean createTopic(String topicName);
+
+	public boolean deleteTopic(String topicName);
 }
